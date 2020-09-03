@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors Game</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			height: 100vh;
+		}
+
+		h2 {
+			text-align: center;
+			font-size: 3rem;
+		}
+
+		button img {
+			width: 200px;
+			height: 200px;
+			transition: .2s ease-in-out;
+		} 
+
+		button img:hover {
+			opacity: 70%;
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: center; 
+			margin-top: 200px;
+		}
+
+		#left {
+			background: #A1D2CE;
+			width: 50%;
+		}
+
+		#right {
+			background: #78CAD2;
+			width: 50%;
+		}
+
+		#parent {
+			display: flex;
+			width: 100%;
+			height: 100%;
+		}
+
+		#message {
+			position: absolute;
+			left: 43%;
+			background-color: red;	
+			top: 10%;
+		}
+
+		#img-left {
+			position: absolute;
+			left: 100px;
+			margin-top: 60px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="parent">
+		<!-- left -->
+		<div id="left">
+			<h2>COMPUTER</h2>
+			<div id="img-left">
+				
+			</div>
+		</div>
+		<!-- msg -->
+		<div id="message">
+			
+		</div>
+		<!-- rihgt -->
+		<div id="right">
+			<h2>YOU</h2>
+			<div class="buttons">
+				<button id="rock"><img src="./rock.png"></button>
+				<button id="paper"><img src="./paper.png"></button>
+				<button id="scissors"><img src="./scissors.png"></button>	
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./script2.js"></script>
+</body>
+</html>
